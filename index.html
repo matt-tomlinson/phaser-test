@@ -27,8 +27,6 @@
     var game = new Phaser.Game(config);
 
     function preload() {
-      //this.load.setBaseURL('http://labs.phaser.io');
-
       this.load.image('sky', 'assets/space3.png');
       this.load.image('logo', 'assets/phaser3-logo.png');
       this.load.image('red', 'assets/red.png');
@@ -52,6 +50,9 @@
       logo.setCollideWorldBounds(true);
 
       emitter.startFollow(logo);
+    }
+
+    function update() {
     }
   </script>
 
